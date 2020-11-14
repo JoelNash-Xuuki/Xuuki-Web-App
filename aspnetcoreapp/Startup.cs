@@ -27,7 +27,7 @@ namespace aspnetcoreapp
         {
             services.AddRazorPages();
 
-			services.AddDbContext<RazorPagesMovieContext>(options =>
+			services.AddDbContext<RazorPagesCreativeContext>(options =>
         		options.UseSqlite(Configuration.GetConnectionString("RazorPagesCreativeContext")));
         }
 

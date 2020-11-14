@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace RazorPagesMovie.Data
+namespace RazorPagesCreative.Data
 {
-    public class RazorPagesMovieContext : DbContext
+    public class RazorPagesCreativeContext : DbContext
     {
-        public RazorPagesMovieContext (
-            DbContextOptions<RazorPagesMovieContext> options)
+        public RazorPagesCreativeContext (
+            DbContextOptions<RazorPagesCreativeContext> options)
             : base(options)
         {
         }
 
-        public DbSet<RazorPagesMovie.Models.Movie> Movie { get; set; }
+        public DbSet<RazorPagesCreative.Models.Creative> Creative { get; set; }
     }
 }
