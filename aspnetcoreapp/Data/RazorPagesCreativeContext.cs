@@ -5,8 +5,7 @@ namespace RazorPagesCreative.Data
     public class RazorPagesCreativeContext : DbContext
     {
         public RazorPagesCreativeContext (
-            DbContextOptions<RazorPagesCreativeContext> options)
-            : base(options)
+            DbContextOptions<RazorPagesCreativeContext> options) : base(options)
         {
         }
 
