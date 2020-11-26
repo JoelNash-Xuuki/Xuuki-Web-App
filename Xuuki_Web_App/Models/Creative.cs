@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MvcCreative.Models
+namespace Creative.Models
 {
-    public class Creative
+    public class CreativeModel
     {
         public int Id { get; set; }
         public string Title { get; set; }

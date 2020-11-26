@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MvcCreative.Data;
+using Creative.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace MvcCreative
+namespace xuukiwebapp
 {
     public class Startup
     {
@@ -27,11 +27,10 @@ namespace MvcCreative
         {
             services.AddControllersWithViews();
 
-			services.AddDbContext<MvcCreativeContext>(options =>
-            	options.UseNpgsql(Configuration.GetConnectionString("MvcCreativeContext")));
+			services.AddDbContext<CreativeDbContext>(options =>
+            	options.UseNpgsql(Configuration.GetConnectionString("CreativeDbContext")));
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
