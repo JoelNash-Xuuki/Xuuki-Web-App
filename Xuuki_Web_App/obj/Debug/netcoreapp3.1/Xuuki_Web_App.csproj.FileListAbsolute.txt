@@ -49,8 +49,9 @@
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Npgsql.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
 /home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
+/home/joel/Xuuki-Website/Xuuki_Web_App/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
