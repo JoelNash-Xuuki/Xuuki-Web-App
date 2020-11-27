@@ -15,20 +15,33 @@ namespace xuukiwebapp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
+			Environment = env;
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
+		public IWebHostEnvironment
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-			services.AddDbContext<CreativeDbContext>(options =>
-            	options.UseNpgsql(Configuration.GetConnectionString("CreativeDbContext")));
-
 			services.AddControllersWithViews();
+
+			services.AddDbContext<CreativeDbContext>(options =>
+			{
+				var connectionString = Configuration.GetConnectionString("postgresql://localhost:5432/CreativeDbContext");
+
+				if(Environment.IsDevelopment())
+				{
+            		options.UseNpgsql(connectionString);
+				}
+				else
+				{
+					//server not on local host to go here?
+				}
+			});
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

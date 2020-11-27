@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MvcCreative.Models;
-
+using Creative.Data;
 using System.Text.Encodings.Web;
 
 namespace MvcCreative.Controllers
 {
     public class CreativeController : Controller
     {
+		private readonly CreativeDbContext _context;
+
+		public CreativeContoller(CreativeDbContext context)
+		{
+			_context = context;
+		}
+		
 		public IActionResult Index()
 		{
 			return View();
