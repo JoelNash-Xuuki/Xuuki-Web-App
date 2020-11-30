@@ -15,14 +15,9 @@ namespace MvcCreative.Controllers
     {
 		private readonly CreativeDbContext _context;
 
-		public CreativeContoller(CreativeDbContext context)
+		public CreativeController(CreativeDbContext context)
 		{
 			_context = context;
-		}
-		
-		public IActionResult Index()
-		{
-			return View();
 		}
 
 		public IActionResult Welcome(string name, int numTimes = 1)
